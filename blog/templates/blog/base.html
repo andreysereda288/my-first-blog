@@ -6,6 +6,9 @@
     </head>
     <body>
         <div>
+			{% if user.is_authenticated %}
+			<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus">новый пост</span></a>
+			{% endif %}
             <h1><a href="/">Полуновости</a></h1>
         </div>
 
